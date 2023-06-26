@@ -28,7 +28,7 @@ printf "Usage:
 fetch() {
     echo "┌────────────┐ "
     echo "│  ${red}${normal} user    │ ${red}$(whoami)${normal}"
-    echo "│  ${yellow}${normal} hname   │ ${yellow}$(cat /etc/hostname)${normal} "
+    echo "│  ${yellow}${normal} host   │ ${yellow}$(cat /etc/hostname)${normal} "
     echo "│  ${green}${normal} distro  │ ${green}$(sed -nE "s@PRETTY_NAME=\"([^\"]*)\"@\1@p" /etc/os-release)${normal} "
     echo "│  ${cyan}漣${normal}kernel  │ ${cyan}$(uname -r)${normal} "
     echo "│  ${blue}${normal} de/wm   │ ${blue}$XDG_CURRENT_DESKTOP${normal} "
